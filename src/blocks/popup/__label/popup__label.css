@@ -1,0 +1,8 @@
+.popup__label:first-of-type {
+  padding-bottom: 30px;
+}
+
+.popup__label {
+  padding-bottom: 45px;
+  position: relative;
+}

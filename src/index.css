@@ -1,0 +1,98 @@
+/* --------------- vendor --------------- */
+@import './vendor/normalize.css';
+
+/* --------------- fonts --------------- */
+@import './fonts/fonts.css';
+
+/* --------------- root --------------- */
+@import './blocks/root/root.css';
+
+/* --------------- content --------------- */
+@import './blocks/content/content.css';
+
+/* --------------- button --------------- */
+@import './blocks/button/button.css';
+
+/* --------------- link --------------- */
+@import './blocks/link/link.css';
+
+/* --------------- header --------------- */
+@import './blocks/header/header.css';
+@import './blocks/header/__container/header__container.css';
+@import './blocks/header/__login-container/header__login-container.css';
+@import './blocks/header/__logo/header__logo.css';
+@import './blocks/header/__links-container/header__links-container.css';
+@import './blocks/header/__links-container/_type_closed/header__links-container_type_closed.css';
+@import './blocks/header/__link/header__link.css';
+@import './blocks/header/__out-button/header__out-button.css';
+@import './blocks/header/__login/header__login.css';
+@import './blocks/header/__menu-button/header__menu-button.css';
+@import './blocks/header/__menu-button/_type_closed/header__menu-button_type_closed.css';
+
+/* --------------- popup --------------- */
+@import './blocks/popup/popup.css';
+@import './blocks/popup/_type_place-photo/popup_type_place-photo.css';
+@import './blocks/popup/_opened/popup_opened.css';
+@import './blocks/popup/__form/popup__form.css';
+@import './blocks/popup/__form/_type_delete-confirmation/popup__form_type_delete-confirmation.css';
+@import './blocks/popup/__container/popup__container.css';
+@import './blocks/popup/__container/_type_place-photo/popup__container_type_place-photo.css';
+@import './blocks/popup/__title/popup__title.css';
+@import './blocks/popup/__close-button/popup__close-button.css';
+@import './blocks/popup/__label/popup__label.css';
+@import './blocks/popup/__input/popup__input.css';
+@import './blocks/popup/__input/_type_error/popup__input_type_error.css';
+@import './blocks/popup/__input-error/popup__input-error.css';
+@import './blocks/popup/__input-error/_active/popup__input-error_active.css';
+@import './blocks/popup/__submit-button/popup__submit-button.css';
+@import './blocks/popup/__submit-button/_inactive/popup__submit-button_inactive.css';
+@import './blocks/popup/__photo.css/popup__photo.css';
+@import './blocks/popup/__figcaption/popup__figcaption.css';
+
+/* --------------- popup - tooltip --------------- */
+@import './blocks/popup/__container/_type_info-tooltip/popup__container_type_info-tooltip.css';
+@import './blocks/popup/__tooltip-text/popup__tooltip-text.css';
+@import './blocks/popup/__tooltip-img/popup__tooltip-img.css';
+
+
+/* --------------- profile --------------- */
+@import './blocks/profile/profile.css';
+@import './blocks/profile/__edit-avatar-button/profile__edit-avatar-button.css';
+@import './blocks/profile/__avatar/profile__avatar.css';
+@import './blocks/profile/__info/profile__info.css';
+@import './blocks/profile/__title/profile__title.css';
+@import './blocks/profile/__name/profile__name.css';
+@import './blocks/profile/__subtitle/profile__subtitle.css';
+@import './blocks/profile/__edit-button/profile__edit-button.css';
+@import './blocks/profile/__add-button/profile__add-button.css';
+
+/* --------------- elements --------------- */
+@import './blocks/elements/elements.css';
+
+/* --------------- element --------------- */
+@import './blocks/element/element.css';
+@import './blocks/element/__image/element__image.css';
+@import './blocks/element/__container/element__container.css';
+@import './blocks/element/__title/element__title.css';
+@import './blocks/element/__button/element__button.css';
+@import './blocks/element/__like-container/element__like-container.css';
+@import './blocks/element/__like/element__like.css';
+@import './blocks/element/__counter/element__counter.css';
+@import './blocks/element/__trash/element__trash.css';
+@import './blocks/element/__like/_active/element__like_active.css';
+
+/* --------------- footer --------------- */
+@import './blocks/footer/footer.css';
+@import './blocks/footer/__text/footer__text.css';
+
+/* --------------- sign --------------- */
+@import './blocks/sign/sign.css';
+@import './blocks/sign/__title/sign__title.css';
+@import './blocks/sign/__form/sign__form.css';
+@import './blocks/sign/__container/sign__container.css';
+@import './blocks/sign/__label/sign__label.css';
+@import './blocks/sign/__input/sign__input.css';
+@import './blocks/sign/__submit-button/sign__submit-button.css';
+@import './blocks/sign/__enter/sign__enter.css';
+@import './blocks/sign/__text/sign__text.css';
+@import './blocks/sign/__link/sign__link.css';

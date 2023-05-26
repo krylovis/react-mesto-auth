@@ -1,0 +1,10 @@
+.sign__enter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
