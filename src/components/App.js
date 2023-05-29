@@ -168,12 +168,12 @@ export default function App() {
 
         {loggedIn && <Footer />}
 
-        {isEditProfilePopupOpen && <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={onUpdateUser} isLoading={isLoading} />}
-        {isAddPlacePopupOpen && <AddPlacePopup isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} onAddPlace={onAddPlace} isLoading={isLoading} />}
-        {isEditAvatarPopupOpen && <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={onUpdateAvatar} isLoading={isLoading} />}
-        {isDelConfPopupOpen && <DeleteConfirmationPopup isOpen={isDelConfPopupOpen} onClose={closeAllPopups} onConfirmation={onConfirmation} />}
-        {selectedCard.link && <ImagePopup card={selectedCard} onClose={closeAllPopups} />}
-        {isInfoTooltipOpen && <InfoTooltip isOpen={isInfoTooltipOpen} onClose={closeAllPopups} isFulfilled={isFulfilled} />}
+        <EditProfilePopup isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} onUpdateUser={onUpdateUser} isLoading={isLoading} />
+        <AddPlacePopup isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} onAddPlace={onAddPlace} isLoading={isLoading} />
+        <EditAvatarPopup isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} onUpdateAvatar={onUpdateAvatar} isLoading={isLoading} />
+        <DeleteConfirmationPopup isOpen={isDelConfPopupOpen} onClose={closeAllPopups} onConfirmation={onConfirmation} />
+        <ImagePopup card={selectedCard} onClose={closeAllPopups} />
+        <InfoTooltip isOpen={isInfoTooltipOpen} onClose={closeAllPopups} isFulfilled={isFulfilled} />
 
       </CardListContext.Provider>
     </CurrentUserContext.Provider>
