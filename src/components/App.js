@@ -119,37 +119,28 @@ export default function App() {
     }
   };
 
-  function onUpdateUser(userInfo) {
+  function handleSubmit(request) {
     setIsLoading(true);
-    api.editUserInfo(userInfo)
-      .then((data) => {
-        setCurrentUser(data);
-        closeAllPopups();
-      })
-      .catch(err => console.log(err))
+    request()
+      .then(closeAllPopups)
+      .catch(console.error)
       .finally(() => setIsLoading(false));
+  };
+
+  function onUpdateUser(userInfo) {
+    const makeRequest = () => api.editUserInfo(userInfo).then(setCurrentUser);
+    handleSubmit(makeRequest);
   };
 
   function onUpdateAvatar(avatar) {
-    setIsLoading(true);
-    api.editAvatar(avatar)
-      .then((data) => {
-        setCurrentUser(data);
-        closeAllPopups();
-      })
-      .catch(err => console.log(err))
-      .finally(() => setIsLoading(false));
+    const makeRequest = () => api.editAvatar(avatar).then(setCurrentUser);
+    handleSubmit(makeRequest);
   };
 
   function onAddPlace(place) {
-    setIsLoading(true);
-    api.addCard(place)
-      .then((newCard) => {
-        setCardList([newCard, ...cardList]);
-        closeAllPopups();
-      })
-      .catch(err => console.log(err))
-      .finally(() => setIsLoading(false));
+    const makeRequest = () => api.addCard(place)
+      .then(newCard => setCardList([newCard, ...cardList]));
+    handleSubmit(makeRequest);
   };
 
   return (
