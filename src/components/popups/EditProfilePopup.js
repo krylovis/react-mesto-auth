@@ -22,7 +22,7 @@ export default function EditProfilePopup(props) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      popupClass="profile-form"
+      popupType="profile-form"
       popupTitle="Редактировать профиль"
       formName="profileForm"
       ariaLabel="Сохранить данные"

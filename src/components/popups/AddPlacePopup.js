@@ -21,7 +21,7 @@ export default function AddPlacePopup(props) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      popupClass="new-place"
+      popupType="new-place"
       popupTitle="Новое место"
       formName="newPlaceForm"
       ariaLabel="Создать новое место"

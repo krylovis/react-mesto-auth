@@ -13,7 +13,7 @@ export default function DeleteConfirmationPopup(props) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      popupClass="delete-confirmation"
+      popupType="delete-confirmation"
       popupTitle="Вы уверены?"
       formName="deleteConfirmation"
       inactiveButton={false}

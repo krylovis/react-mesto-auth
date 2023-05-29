@@ -20,7 +20,7 @@ export default function EditAvatarPopup(props) {
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
-      popupClass="new-avatar"
+      popupType="new-avatar"
       popupTitle="Обновить аватар"
       formName="newAvatarForm"
       ariaLabel="Сохранить аватар"

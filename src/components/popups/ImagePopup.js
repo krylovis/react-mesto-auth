@@ -1,19 +1,22 @@
 
-import usePopupClose from '../../hooks/usePopupClose';
+import Popup from '../../components/popups/Popup';
 
 export default function ImagePopup(props) {
   const { card, onClose } = props;
   const { name, link } = card;
   const isData = name && link ? true : false;
-  usePopupClose(isData, onClose);
+  const popupType = 'place-photo';
+  const containerType = 'popup__container_type_place-photo';
 
   return (
-    <section className={`popup popup_type_place-photo ${isData ? "popup_opened" : ''}`}>
-      <figure className="popup__container popup__container_type_place-photo">
-        <img src={link} alt={`Фото: ${name}`} className="popup__photo" />
-        <figcaption className="popup__figcaption">{name}</figcaption>
-        <button className="button popup__close-button" type="button" aria-label="Закрыть форму" onClick={onClose}></button>
-      </figure>
-    </section>
+    <Popup
+      isOpen={isData}
+      onClose={onClose}
+      popupType={popupType}
+      containerType={containerType}
+    >
+      <img src={link} alt={`Фото: ${name}`} className="popup__photo" />
+      <figcaption className="popup__figcaption">{name}</figcaption>
+    </Popup>
   );
 }
