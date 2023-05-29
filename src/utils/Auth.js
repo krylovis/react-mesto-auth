@@ -13,7 +13,7 @@ const defaultOptions = (password, email) => {
 };
 
 const request = (url, options) => {
-  return fetch(url, options).then(getResponse)
+  return fetch(`${BASE_URL}/${url}`, options).then(getResponse)
 };
 
 const getResponse = (res) => {
@@ -22,15 +22,15 @@ const getResponse = (res) => {
 };
 
 export const register = ({ password, email }) => {
-  return request(`${BASE_URL}/signup`, defaultOptions(password, email))
+  return request('signup', defaultOptions(password, email))
 };
 
 export const authorize = ({ password, email }) => {
-  return request(`${BASE_URL}/signin`, defaultOptions(password, email))
+  return request('signin', defaultOptions(password, email))
 };
 
 export const tokenVerification = (token) => {
-  return request(`${BASE_URL}/users/me`, {
+  return request('users/me', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
