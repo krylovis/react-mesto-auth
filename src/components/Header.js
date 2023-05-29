@@ -18,9 +18,10 @@ export default function Header(props) {
   };
 
   React.useEffect(() => {
-    window.addEventListener('resize', () => {
-      if (document.body.clientWidth > 420) setIsOpen(false);
-    });
+    const resize = () => document.body.clientWidth > 420 && setIsOpen(false);;
+    resize();
+    window.addEventListener('resize', resize);
+    return () => window.removeEventListener("resize", resize);
   });
 
   const toggleMenu = () => setIsOpen(isOpen => !isOpen);
